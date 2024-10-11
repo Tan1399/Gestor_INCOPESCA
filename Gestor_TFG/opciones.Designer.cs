@@ -39,6 +39,7 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.Volver = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // iconMenuItem1
@@ -103,7 +104,7 @@
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Archive;
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(63, 39);
+            this.iconButton1.Location = new System.Drawing.Point(25, 34);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(149, 124);
             this.iconButton1.TabIndex = 0;
@@ -120,13 +121,14 @@
             this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Eraser;
             this.iconButton6.IconColor = System.Drawing.Color.Black;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.Location = new System.Drawing.Point(63, 350);
+            this.iconButton6.Location = new System.Drawing.Point(12, 335);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Size = new System.Drawing.Size(149, 124);
             this.iconButton6.TabIndex = 5;
             this.iconButton6.Text = "BORRAR";
             this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton6.UseVisualStyleBackColor = false;
+            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
             // 
             // iconButton2
             // 
@@ -136,7 +138,7 @@
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Book;
             this.iconButton2.IconColor = System.Drawing.Color.Black;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(705, 359);
+            this.iconButton2.Location = new System.Drawing.Point(375, 335);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(149, 124);
             this.iconButton2.TabIndex = 6;
@@ -153,13 +155,14 @@
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Pen;
             this.iconButton3.IconColor = System.Drawing.Color.Black;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(705, 39);
+            this.iconButton3.Location = new System.Drawing.Point(375, 34);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(149, 124);
             this.iconButton3.TabIndex = 7;
             this.iconButton3.Text = "EDITAR";
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // iconButton4
             // 
@@ -169,27 +172,48 @@
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.iconButton4.IconColor = System.Drawing.Color.Black;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(399, 173);
+            this.iconButton4.Location = new System.Drawing.Point(194, 177);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(149, 124);
             this.iconButton4.TabIndex = 8;
             this.iconButton4.Text = "VER CANTIDAD";
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton4.UseVisualStyleBackColor = false;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
+            // 
+            // Volver
+            // 
+            this.Volver.BackColor = System.Drawing.SystemColors.Info;
+            this.Volver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Volver.IconChar = FontAwesome.Sharp.IconChar.DoorClosed;
+            this.Volver.IconColor = System.Drawing.Color.Black;
+            this.Volver.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Volver.Location = new System.Drawing.Point(203, 335);
+            this.Volver.Name = "Volver";
+            this.Volver.Size = new System.Drawing.Size(129, 115);
+            this.Volver.TabIndex = 10;
+            this.Volver.Text = "Volver";
+            this.Volver.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Volver.UseVisualStyleBackColor = false;
+            this.Volver.Click += new System.EventHandler(this.Volver_Click);
             // 
             // opciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(905, 511);
+            this.ClientSize = new System.Drawing.Size(536, 511);
+            this.Controls.Add(this.Volver);
             this.Controls.Add(this.iconButton4);
             this.Controls.Add(this.iconButton3);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton6);
             this.Controls.Add(this.iconButton1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "opciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "opciones";
+            this.Load += new System.EventHandler(this.opciones_Load);
             this.ResumeLayout(false);
 
         }
@@ -207,5 +231,6 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton Volver;
     }
 }

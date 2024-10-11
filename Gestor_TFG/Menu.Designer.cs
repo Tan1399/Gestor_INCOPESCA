@@ -33,16 +33,17 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.Prueba = new System.Windows.Forms.Label();
-            this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.Dep_info = new FontAwesome.Sharp.IconMenuItem();
             this.Dep_contabilidad = new FontAwesome.Sharp.IconMenuItem();
             this.Dep_Recursoshumanos = new FontAwesome.Sharp.IconMenuItem();
-            this.menureportes = new FontAwesome.Sharp.IconMenuItem();
+            this.DepPesqueraAcuícola = new FontAwesome.Sharp.IconMenuItem();
+            this.DepPromociónmercado = new FontAwesome.Sharp.IconMenuItem();
+            this.AreaRegistro = new FontAwesome.Sharp.IconMenuItem();
+            this.DepartamentoFiscal = new FontAwesome.Sharp.IconMenuItem();
+            this.Salir = new FontAwesome.Sharp.IconMenuItem();
+            this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.iconMenuItem2 = new FontAwesome.Sharp.IconMenuItem();
-            this.iconMenuItem4 = new FontAwesome.Sharp.IconMenuItem();
-            this.iconMenuItem3 = new FontAwesome.Sharp.IconMenuItem();
-            this.menuacercade = new FontAwesome.Sharp.IconMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip3.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +53,7 @@
             this.menuStrip1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1117, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1270, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -62,14 +63,14 @@
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Location = new System.Drawing.Point(0, 124);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1117, 164);
+            this.panel1.Size = new System.Drawing.Size(1282, 164);
             this.panel1.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1117, 158);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1270, 158);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // menuStrip2
@@ -77,7 +78,7 @@
             this.menuStrip2.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.menuStrip2.Location = new System.Drawing.Point(0, 24);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(1117, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(1270, 24);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -87,20 +88,12 @@
             this.Prueba.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.Prueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.Prueba.ForeColor = System.Drawing.Color.White;
-            this.Prueba.Location = new System.Drawing.Point(503, 9);
+            this.Prueba.Location = new System.Drawing.Point(630, 9);
             this.Prueba.Name = "Prueba";
             this.Prueba.Size = new System.Drawing.Size(94, 31);
             this.Prueba.TabIndex = 4;
             this.Prueba.Text = "MENU";
-            // 
-            // iconMenuItem1
-            // 
-            this.iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem1.Name = "iconMenuItem1";
-            this.iconMenuItem1.Size = new System.Drawing.Size(32, 19);
-            this.iconMenuItem1.Text = "iconMenuItem1";
+            this.Prueba.Click += new System.EventHandler(this.Prueba_Click);
             // 
             // menuStrip3
             // 
@@ -109,14 +102,15 @@
             this.Dep_info,
             this.Dep_contabilidad,
             this.Dep_Recursoshumanos,
-            this.menureportes,
+            this.DepPesqueraAcuícola,
+            this.DepPromociónmercado,
+            this.AreaRegistro,
+            this.DepartamentoFiscal,
             this.iconMenuItem2,
-            this.iconMenuItem4,
-            this.iconMenuItem3,
-            this.menuacercade});
+            this.Salir});
             this.menuStrip3.Location = new System.Drawing.Point(0, 48);
             this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(1117, 73);
+            this.menuStrip3.Size = new System.Drawing.Size(1270, 73);
             this.menuStrip3.TabIndex = 5;
             this.menuStrip3.Text = "menuStrip1";
             // 
@@ -137,108 +131,140 @@
             // Dep_contabilidad
             // 
             this.Dep_contabilidad.AutoSize = false;
-            this.Dep_contabilidad.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
+            this.Dep_contabilidad.IconChar = FontAwesome.Sharp.IconChar.MoneyBill;
             this.Dep_contabilidad.IconColor = System.Drawing.Color.Black;
             this.Dep_contabilidad.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Dep_contabilidad.IconSize = 50;
             this.Dep_contabilidad.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.Dep_contabilidad.Name = "Dep_contabilidad";
-            this.Dep_contabilidad.Size = new System.Drawing.Size(122, 69);
-            this.Dep_contabilidad.Text = " ";
+            this.Dep_contabilidad.Size = new System.Drawing.Size(130, 69);
+            this.Dep_contabilidad.Text = "Departamento contable";
             this.Dep_contabilidad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Dep_contabilidad.Click += new System.EventHandler(this.Dep_contabilidad_Click);
             // 
             // Dep_Recursoshumanos
             // 
             this.Dep_Recursoshumanos.AutoSize = false;
-            this.Dep_Recursoshumanos.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
+            this.Dep_Recursoshumanos.IconChar = FontAwesome.Sharp.IconChar.PeopleLine;
             this.Dep_Recursoshumanos.IconColor = System.Drawing.Color.Black;
             this.Dep_Recursoshumanos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Dep_Recursoshumanos.IconSize = 50;
             this.Dep_Recursoshumanos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.Dep_Recursoshumanos.Name = "Dep_Recursoshumanos";
-            this.Dep_Recursoshumanos.Size = new System.Drawing.Size(122, 69);
-            this.Dep_Recursoshumanos.Text = " ";
+            this.Dep_Recursoshumanos.Size = new System.Drawing.Size(185, 69);
+            this.Dep_Recursoshumanos.Text = " Departamento Recursos Humanos";
             this.Dep_Recursoshumanos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Dep_Recursoshumanos.Click += new System.EventHandler(this.Dep_Recursoshumanos_Click);
             // 
-            // menureportes
+            // DepPesqueraAcuícola
             // 
-            this.menureportes.AutoSize = false;
-            this.menureportes.IconChar = FontAwesome.Sharp.IconChar.BarChart;
-            this.menureportes.IconColor = System.Drawing.Color.Black;
-            this.menureportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menureportes.IconSize = 50;
-            this.menureportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menureportes.Name = "menureportes";
-            this.menureportes.Size = new System.Drawing.Size(122, 69);
-            this.menureportes.Text = " ";
-            this.menureportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.DepPesqueraAcuícola.AutoSize = false;
+            this.DepPesqueraAcuícola.IconChar = FontAwesome.Sharp.IconChar.Fish;
+            this.DepPesqueraAcuícola.IconColor = System.Drawing.Color.Black;
+            this.DepPesqueraAcuícola.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.DepPesqueraAcuícola.IconSize = 50;
+            this.DepPesqueraAcuícola.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.DepPesqueraAcuícola.Name = "DepPesqueraAcuícola";
+            this.DepPesqueraAcuícola.Size = new System.Drawing.Size(122, 69);
+            this.DepPesqueraAcuícola.Text = " Pesquera Acuícola";
+            this.DepPesqueraAcuícola.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.DepPesqueraAcuícola.Click += new System.EventHandler(this.menureportes_Click);
+            // 
+            // DepPromociónmercado
+            // 
+            this.DepPromociónmercado.AutoSize = false;
+            this.DepPromociónmercado.IconChar = FontAwesome.Sharp.IconChar.Shop;
+            this.DepPromociónmercado.IconColor = System.Drawing.Color.Black;
+            this.DepPromociónmercado.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.DepPromociónmercado.IconSize = 50;
+            this.DepPromociónmercado.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.DepPromociónmercado.Name = "DepPromociónmercado";
+            this.DepPromociónmercado.Size = new System.Drawing.Size(215, 69);
+            this.DepPromociónmercado.Text = " Departamento Promoción de Mercados";
+            this.DepPromociónmercado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.DepPromociónmercado.Click += new System.EventHandler(this.DepPromociónmercado_Click);
+            // 
+            // AreaRegistro
+            // 
+            this.AreaRegistro.AutoSize = false;
+            this.AreaRegistro.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.AreaRegistro.IconColor = System.Drawing.Color.Black;
+            this.AreaRegistro.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.AreaRegistro.IconSize = 50;
+            this.AreaRegistro.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.AreaRegistro.Name = "AreaRegistro";
+            this.AreaRegistro.Size = new System.Drawing.Size(122, 69);
+            this.AreaRegistro.Text = " Área de Registro";
+            this.AreaRegistro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.AreaRegistro.Click += new System.EventHandler(this.AreaRegistro_Click);
+            // 
+            // DepartamentoFiscal
+            // 
+            this.DepartamentoFiscal.AutoSize = false;
+            this.DepartamentoFiscal.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
+            this.DepartamentoFiscal.IconColor = System.Drawing.Color.Black;
+            this.DepartamentoFiscal.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.DepartamentoFiscal.IconSize = 50;
+            this.DepartamentoFiscal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.DepartamentoFiscal.Name = "DepartamentoFiscal";
+            this.DepartamentoFiscal.Size = new System.Drawing.Size(122, 69);
+            this.DepartamentoFiscal.Text = " Departamento Fiscal";
+            this.DepartamentoFiscal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.DepartamentoFiscal.Click += new System.EventHandler(this.DepartamentoFiscal_Click);
+            // 
+            // Salir
+            // 
+            this.Salir.AutoSize = false;
+            this.Salir.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.Salir.IconColor = System.Drawing.Color.Black;
+            this.Salir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Salir.IconSize = 50;
+            this.Salir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.Salir.Name = "Salir";
+            this.Salir.Size = new System.Drawing.Size(122, 69);
+            this.Salir.Text = " Salir";
+            this.Salir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Salir.Click += new System.EventHandler(this.menuacercade_Click);
+            // 
+            // iconMenuItem1
+            // 
+            this.iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMenuItem1.Name = "iconMenuItem1";
+            this.iconMenuItem1.Size = new System.Drawing.Size(32, 19);
+            this.iconMenuItem1.Text = "iconMenuItem1";
             // 
             // iconMenuItem2
             // 
             this.iconMenuItem2.AutoSize = false;
-            this.iconMenuItem2.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            this.iconMenuItem2.IconChar = FontAwesome.Sharp.IconChar.Tools;
             this.iconMenuItem2.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem2.IconSize = 50;
             this.iconMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.iconMenuItem2.Name = "iconMenuItem2";
             this.iconMenuItem2.Size = new System.Drawing.Size(122, 69);
-            this.iconMenuItem2.Text = " ";
+            this.iconMenuItem2.Text = " Configuraciones";
             this.iconMenuItem2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // iconMenuItem4
-            // 
-            this.iconMenuItem4.AutoSize = false;
-            this.iconMenuItem4.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            this.iconMenuItem4.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem4.IconSize = 50;
-            this.iconMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.iconMenuItem4.Name = "iconMenuItem4";
-            this.iconMenuItem4.Size = new System.Drawing.Size(122, 69);
-            this.iconMenuItem4.Text = " ";
-            this.iconMenuItem4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // iconMenuItem3
-            // 
-            this.iconMenuItem3.AutoSize = false;
-            this.iconMenuItem3.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            this.iconMenuItem3.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem3.IconSize = 50;
-            this.iconMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.iconMenuItem3.Name = "iconMenuItem3";
-            this.iconMenuItem3.Size = new System.Drawing.Size(122, 69);
-            this.iconMenuItem3.Text = " ";
-            this.iconMenuItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // menuacercade
-            // 
-            this.menuacercade.AutoSize = false;
-            this.menuacercade.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            this.menuacercade.IconColor = System.Drawing.Color.Black;
-            this.menuacercade.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuacercade.IconSize = 50;
-            this.menuacercade.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuacercade.Name = "menuacercade";
-            this.menuacercade.Size = new System.Drawing.Size(122, 69);
-            this.menuacercade.Text = " ";
-            this.menuacercade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.iconMenuItem2.Click += new System.EventHandler(this.iconMenuItem2_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1117, 284);
+            this.ClientSize = new System.Drawing.Size(1270, 289);
             this.Controls.Add(this.menuStrip3);
             this.Controls.Add(this.Prueba);
             this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.panel1.ResumeLayout(false);
             this.menuStrip3.ResumeLayout(false);
             this.menuStrip3.PerformLayout();
@@ -258,11 +284,12 @@
         private FontAwesome.Sharp.IconMenuItem Dep_info;
         private FontAwesome.Sharp.IconMenuItem Dep_contabilidad;
         private FontAwesome.Sharp.IconMenuItem Dep_Recursoshumanos;
-        private FontAwesome.Sharp.IconMenuItem menureportes;
-        private FontAwesome.Sharp.IconMenuItem iconMenuItem2;
-        private FontAwesome.Sharp.IconMenuItem iconMenuItem4;
-        private FontAwesome.Sharp.IconMenuItem iconMenuItem3;
-        private FontAwesome.Sharp.IconMenuItem menuacercade;
+        private FontAwesome.Sharp.IconMenuItem DepPesqueraAcuícola;
+        private FontAwesome.Sharp.IconMenuItem DepPromociónmercado;
+        private FontAwesome.Sharp.IconMenuItem AreaRegistro;
+        private FontAwesome.Sharp.IconMenuItem DepartamentoFiscal;
+        private FontAwesome.Sharp.IconMenuItem Salir;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private FontAwesome.Sharp.IconMenuItem iconMenuItem2;
     }
 }

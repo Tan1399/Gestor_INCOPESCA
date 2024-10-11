@@ -29,7 +29,7 @@ namespace Gestor_TFG
 
         public DateTime last_maintence { get; set; }
 
-        public char model { get; set; }
+        public string model { get; set; }
 
         public string brand { get; set; }
 
